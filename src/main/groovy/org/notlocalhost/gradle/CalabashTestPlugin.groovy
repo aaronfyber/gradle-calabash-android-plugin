@@ -97,6 +97,8 @@ class CalabashTestPlugin implements Plugin<Project> {
             commandArguments.add("/c")
         }
 
+        commandArguments.add("bundle")
+        commandArguments.add("exec")
         commandArguments.add("calabash-android")
         commandArguments.add("run")
         commandArguments.add(apkFile)
